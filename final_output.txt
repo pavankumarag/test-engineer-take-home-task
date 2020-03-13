@@ -1,0 +1,51 @@
+(python3-env) pavan.govindraj@pavan-govindraj1:~/test-engineer-take-home-task/test_code$ pytest -sv testcase.py --image "parity/substrate:2.0.0-31c633c47"
+==================================================================== test session starts =====================================================================
+platform linux -- Python 3.7.3, pytest-5.4.1, py-1.8.1, pluggy-0.13.1 -- /home/pavan.govindraj/python3-env/bin/python3.7
+cachedir: .pytest_cache
+rootdir: /home/pavan.govindraj/test-engineer-take-home-task/test_code
+collected 1 item
+
+testcase.py::TestRemoveSubstrate::test_create_substrate_container_destroy[parity/substrate:2.0.0-31c633c47]
+2020-03-13 19:06:32 ::test_code.testcase     INFO      -We are creating substrate docker container from parity
+
+2020-03-13 19:06:32 ::test_code.testcase     INFO      Remove if container already exists
+
+2020-03-13 19:06:32 ::test_code.testcase     INFO      Create substrate container
+
+2020-03-13 19:06:37 ::test_code.testcase     INFO      Checking for block number and deleting container if it exceeds 10
+
+2020-03-13 19:06:37 ::test_code.testcase     INFO      Block Number: 1
+
+2020-03-13 19:06:39 ::test_code.testcase     INFO      Block Number: 2
+
+2020-03-13 19:06:41 ::test_code.testcase     INFO      Block Number: 2
+
+2020-03-13 19:06:43 ::test_code.testcase     INFO      Block Number: 3
+
+2020-03-13 19:06:46 ::test_code.testcase     INFO      Block Number: 4
+
+2020-03-13 19:06:48 ::test_code.testcase     INFO      Block Number: 5
+
+2020-03-13 19:06:50 ::test_code.testcase     INFO      Block Number: 5
+
+2020-03-13 19:06:52 ::test_code.testcase     INFO      Block Number: 6
+
+2020-03-13 19:06:54 ::test_code.testcase     INFO      Block Number: 7
+
+2020-03-13 19:06:56 ::test_code.testcase     INFO      Block Number: 7
+
+2020-03-13 19:06:58 ::test_code.testcase     INFO      Block Number: 8
+
+2020-03-13 19:07:00 ::test_code.testcase     INFO      Block Number: 9
+
+2020-03-13 19:07:02 ::test_code.testcase     INFO      Block Number: 9
+
+2020-03-13 19:07:04 ::test_code.testcase     INFO      Block Number: 10
+
+2020-03-13 19:07:06 ::test_code.testcase     INFO      Block Number: 11
+
+2020-03-13 19:07:08 ::test_code.testcase     INFO      Removing substrate docker container as now block_num exceeds 10
+PASSED
+
+===================================================================== 1 passed in 36.30s =====================================================================
+(python3-env) pavan.govindraj@pavan-govindraj1:~/test-engineer-take-home-task/test_code$
