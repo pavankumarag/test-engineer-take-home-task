@@ -4,6 +4,12 @@
 - cd test_code
 - pytest -sv testcase.py --image "parity/substrate:2.0.0-31c633c47"
 
+# Further improvements
+
+- Structurize the framework
+- Currently reading docker image from command line, make it to read from config file
+- Right now docker run is used to deploy containr, use docker-compose or docker swarm to deploy
+
 # Test Engineer - Take Home Task
 
 
