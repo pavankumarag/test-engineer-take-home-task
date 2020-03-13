@@ -1,6 +1,7 @@
 # Execution details
 
 - pip install -r requirements.txt (Python 2), or pip3 install -r requirements.txt (Python 3)
+- git clone git@github.com:pavankumarag/test-engineer-take-home-task.git
 - cd test_code
 - pytest -sv testcase.py --image "parity/substrate:2.0.0-31c633c47"
 
