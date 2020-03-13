@@ -3,10 +3,10 @@ import json
 import time
 from util import run_cmd, configure_log
 
-LOG = configure_log(logging.DEBUG, __name__, "test")
+LOG = configure_log(logging.DEBUG, __name__, "console.log")
 
 class TestRemoveSubstrate:
-	def test_create_substrate_container_destroy(self):
+	def test_create_substrate_container_destroy(self, image):
 		"""
 		This test method does the following things
 			- Remove the docker container if it already exists
@@ -16,7 +16,7 @@ class TestRemoveSubstrate:
 		:return:
 		"""
 		# All the commands needed to be run
-		docker_create = "docker run -itd --name parity --net host parity/substrate:2.0.0-31c633c47 --dev"
+		docker_create = "docker run -itd --name parity --net host %s --dev" % image
 		rm = "docker rm -f parity"
 		check_block_num = 'curl  -H "Content-Type: application/json" -d \'{"id":1, "jsonrpc":"2.0", "method": "chain_getBlock"}\' localhost:9933'
 
