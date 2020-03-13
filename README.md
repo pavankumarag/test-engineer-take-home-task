@@ -1,8 +1,8 @@
 # Execution details
 
-pip install -r requirements.txt (Python 2), or pip3 install -r requirements.txt (Python 3)
-cd test_code
-pytest -sv testcase.py --image "parity/substrate:2.0.0-31c633c47"
+- pip install -r requirements.txt (Python 2), or pip3 install -r requirements.txt (Python 3)
+- cd test_code
+- pytest -sv testcase.py --image "parity/substrate:2.0.0-31c633c47"
 
 # Test Engineer - Take Home Task
 
